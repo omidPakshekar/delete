@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>About Page</h3>
+<p>{{title}}</p>
+{% for i in mylist %}
+  <li>{{forloop.counter}}-{{i}}</li>
+{% endfor %}
+{% endblock %}
